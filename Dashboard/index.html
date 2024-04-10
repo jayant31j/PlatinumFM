@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-blue-800">
+    <header
+      class="bg-blue-800 text-white py-4 px-6 flex items-center justify-between border-b relative"
+    >
+      <div class="flex items-center">
+        <img
+          src="Elements/Link → index.png.png"
+          alt="Logo 1"
+          class="h-10 mr-4"
+        />
+        <img src="Elements/ClientProfile.png.png" alt="Logo 2" class="h-10" />
+      </div>
+      <div class="absolute right-0">
+        <button
+          class="bg-gray-600 text-white py-6 px-20 hover:bg-gray-600 flex items-center"
+        >
+          <img src="Elements/Logout.svg" alt="Logo 1" class="h-6 mr-4" />
+          Logout
+        </button>
+      </div>
+    </header>
+
+    <div class="mx-auto p-6" style="max-width: 1350px">
+      <div class="mt-12 bg-white rounded-lg p-10 relative">
+        <div
+          class="absolute left-0 top-0 mt-0 ml-2 h-full w-1 bg-blue-600 rounded-lg"
+        ></div>
+        <!-- Vertical blue line -->
+        <h1 class="text-4xl font-bold text-black">
+          Dashboard,<br />
+          <span class="text-sm text-gray-600 font-light ml-1"
+            >Welcome back
+            <span class="text-sm text-blue-600 font-light">Jayant </span></span
+          >
+        </h1>
+        <div class="absolute top-0 right-0 mt-4 mr-40">
+          <img src="Elements/Frame.png.png" alt="Logo 1" class="h-30 w-30" />
+        </div>
+        <div class="absolute top-0 right-0 mt-12 mr-10">
+          <!-- Logos container -->
+          <img
+            src="Elements/Inform_logo.png.png"
+            alt="Logo 2"
+            class="h-30 w-30 ml-4"
+          />
+        </div>
+      </div>
+
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6"
+      >
+        <!-- Work Orders -->
+        <div
+          class="bg-white text-gray-800 rounded-lg p-4 flex flex-col items-center justify-around"
+          style="height: 250px"
+        >
+          <img
+            src="Elements/workorder.svg"
+            alt="Work Order Icon"
+            class="h-16 w-16"
+          />
+
+          <h2 class="text-lg font-semibold mb-2 text-center">Work Orders</h2>
+
+          <div
+            class="bg-blue-600 text-white rounded-lg py-2 px-4 inline-flex items-center mb-2 cursor-pointer"
+          >
+            Go to New work orders ➜
+            <i class="fas fa-arrow-circle-right ml-2"></i>
+          </div>
+
+          <p class="text-sm text-green-600">📈 13.62% From Last Week</p>
+        </div>
+
+        <!-- Planned Maintenance -->
+        <div
+          class="bg-white text-gray-800 rounded-lg p-4 flex flex-col items-center justify-around"
+          style="height: 250px"
+        >
+          <img
+            src="Elements/Plannedmaintenance.svg"
+            alt="Work Order Icon"
+            class="h-16 w-16"
+          />
+          <h2 class="text-lg font-semibold mb-2 text-center">
+            Planned Maintenance
+          </h2>
+          <div
+            class="bg-blue-600 text-white rounded-lg py-2 px-4 inline-flex items-center mb-2 cursor-pointer"
+          >
+            Go to Planned Maintenance ➜
+            <i class="fas fa-arrow-circle-right ml-2"></i>
+          </div>
+          <p class="text-sm text-green-600">🔼 20 Planned maintenance Today</p>
+        </div>
+
+        <!-- Reports and Dashboards -->
+        <div
+          class="bg-white text-gray-800 rounded-lg p-4 flex flex-col items-center justify-around"
+          style="height: 250px"
+        >
+          <img
+            src="Elements/Analytics.svg"
+            alt="Work Order Icon"
+            class="h-16 w-16"
+          />
+          <h2 class="text-lg font-semibold mb-2 text-center">
+            Reports and Dashboards
+          </h2>
+          <div
+            class="bg-blue-600 text-white rounded-lg py-2 px-4 inline-flex items-center mb-2 cursor-pointer"
+          >
+            Go to Reports and Dashboard ➜
+            <i class="fas fa-arrow-circle-right ml-2"></i>
+          </div>
+          <p class="text-sm text-red-600">🔽 2.04% From Last Week</p>
+        </div>
+
+        <!-- Vendor Information -->
+        <div
+          class="bg-white text-gray-800 rounded-lg p-4 flex flex-col items-center justify-around"
+          style="height: 250px"
+        >
+          <img
+            src="Elements/Vendor.svg"
+            alt="Work Order Icon"
+            class="h-16 w-16"
+          />
+          <h2 class="text-lg font-semibold mb-2 text-center">
+            Vendor Information
+          </h2>
+          <div
+            class="bg-blue-600 text-white rounded-lg py-2 px-4 inline-flex items-center mb-2 cursor-pointer"
+          >
+            Go to Vendor Information ➜
+            <i class="fas fa-arrow-circle-right ml-2"></i>
+          </div>
+          <p class="text-sm text-green-600">🔼 3% New Vendors this week</p>
+        </div>
+
+        <!-- Lifecycle and Condition -->
+        <div
+          class="bg-white text-gray-800 rounded-lg p-4 flex flex-col items-center justify-around"
+          style="height: 250px"
+        >
+          <img
+            src="Elements/Clock.svg"
+            alt="Work Order Icon"
+            class="h-16 w-16"
+          />
+          <h2 class="text-lg font-semibold mb-2 text-center">
+            Lifecycle and Condition
+          </h2>
+          <div
+            class="bg-blue-600 text-white rounded-lg py-2 px-4 inline-flex items-center mb-2 cursor-pointer"
+          >
+            Go to Lifecycle and Condition ➜
+            <i class="fas fa-arrow-circle-right ml-2"></i>
+          </div>
+          <p class="text-sm text-green-600">🔼 10 Condition Checks required</p>
+        </div>
+
+        <!-- My Action Approvals -->
+        <div
+          class="bg-white text-gray-800 rounded-lg p-4 flex flex-col items-center justify-around"
+          style="height: 250px"
+        >
+          <img
+            src="Elements/Actoinapprovals.svg"
+            alt="Work Order Icon"
+            class="h-16 w-16"
+          />
+          <h2 class="text-lg font-semibold mb-2 text-center">
+            My Action Approvals
+          </h2>
+          <div
+            class="bg-blue-600 text-white rounded-lg py-2 px-4 inline-flex items-center mb-2 cursor-pointer"
+          >
+            Go to Action Approvals ➜
+            <i class="fas fa-arrow-circle-right ml-2"></i>
+          </div>
+          <p class="text-sm text-red-600">🔽 1% From Last Week</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
