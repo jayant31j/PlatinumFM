@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="image-container">
+          <img src="Elements/Link → index.png.png" alt="Client Profile" class="client-profile" />
+          <img src="Elements/ClientProfile.png.png" alt="Link to Index" class="link-to-index"  />
+          
+        </div>
+        
+        <div class="login-container">
+            <!-- <div class="wrapper"></div> -->
+            <h1>Login</h1>
+            <p>Enter your Details</p>
+            <form action="/login" method="post">
+              <div class="input-group ">
+                <img src="Elements/loginicon.svg" alt="" />
+                <input type="Username" id="Username" name="Username" placeholder="Username">
+              </div>
+    
+              <div class="input-group ">
+                <img src="Elements/password.svg" alt="Password Icon" />
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn blue">Login</button>
+            </form>
+            <a href="/forgot-password">Forgot your password?</a>
+
+        </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
