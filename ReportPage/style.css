@@ -1,0 +1,54 @@
+/* Custom style for the sidebar */
+.sidebar {
+  width: 3rem; /* Initial width */
+  transition: width 0.3s ease;
+  background-color: #2a65b9; /* Tailwind blue-800 */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  width: 16rem; /* Increased width to prevent text cutting off */
+}
+
+.sidebar-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 8px 12px; /* Keep padding moderate */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.sidebar-icon {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-text {
+  display: none; /* Hide text initially */
+  font-size: 15px; /* Ensure text is not too large */
+  padding-left: 10px; /* Space between icon and text */
+  overflow: hidden; /* Avoid overflow */
+  text-overflow: ellipsis; /* Use ellipsis for overflow text */
+}
+
+.sidebar:hover .sidebar-text {
+  display: block; /* Show text on hover */
+}
+
+/* Ensure all elements within the sidebar are vertically aligned and spaced appropriately */
+.sidebar-item {
+  margin-bottom: 10px; /* Manage space between items */
+}
+
+.sidebar-item:last-child {
+  margin-bottom: 0; /* No margin for the last item */
+}
